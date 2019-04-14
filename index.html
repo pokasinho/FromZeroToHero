@@ -28,7 +28,7 @@
         <li><a href="#prices">Prices</a></li>
         <li><a href="#location">Location</a></li>
         <li><a href="#about-Karin">About Karin</a></li>
-        <li><a href="" class="btn">Book now</a></li>
+        <li><a href="javascript" class="btn booking">Book now</a></li>
       </ul>
       <button class="close">
         <span></span>
@@ -48,8 +48,10 @@
           <li>
             <h1>Pokas Apartments</h1>
             <p><span>Make your stay with your favourite pet</span></p>
-            <a href="" class="btn"> BOOK NOW </a>
+            <a href="" class="btn booking"> BOOK NOW </a>
           </li>
+          <!-- <li></li>
+          <li></li> -->
         </ul>
     </section>
     <section class="apartments text-center">
@@ -249,6 +251,34 @@
       </ul>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal-wrap text-center">
+      <div class="modal-inner">
+        <img src="img/logo.png" alt="logo">
+        <h3>Reserve your stay</h3>
+        <form>
+          <fieldset>
+            <legend>Booking information</legend>
+            <input type="number" name="num-of-people" placeholder="Enter number of people" class="width__2">
+            <input type="date" name="res-date" placeholder="Select date:">
+            <input type="date" name="res-date" placeholder="Select date:">
+          </fieldset>
+          <fieldset>
+            <legend>Contact</legend>
+            <input type="text" name="firstname-surname" placeholder="Enter name" class="width__2">
+            <input type="email" name="email" placeholder="Enter email address">
+            <input type="number" name="phone-num" placeholder="Enter phone number">
+            <input type="submit" value="Submit booking request" class="btn">
+          </fieldset>
+        </form>
+        <button class="close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
