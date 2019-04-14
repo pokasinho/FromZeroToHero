@@ -680,7 +680,7 @@ nav .close span:nth-child(2) {
 /* ======== PRICE ========== */
 
 .prices ul {
-    padding-bottom: 65px;
+    padding: 0px 20px 65px;
 }
 .prices li {
     width: 16%;
@@ -751,7 +751,7 @@ nav .close span:nth-child(2) {
 /***********TABLET***********/
 
 
-/***********PC***********/
+/***********LAPTOP 1024***********/
 @media only screen and (min-width: 1024px) {
     
     section {
@@ -832,15 +832,23 @@ nav .close span:nth-child(2) {
 
 /* ======== APARTMENTS END========== */
 
-/* ======== PRICE ========== */
+/* ======== PRICES ========== */
 
-/* ======== PRICE END========== */
+    .prices ul {
+        padding: 0px 40px 65px;
+    }
+
+/* ======== PRICES END========== */
 
 /* ======== LOCATION ========== */
 
+    .location {
+        background-position: 0px -210px; 
+    }
     .location .container {
         width: 100%;
         padding: 0px 105px;
+        justify-content: center;
     }
 
 /* ======== LOCATION END========== */
@@ -851,12 +859,28 @@ nav .close span:nth-child(2) {
 
 /* ======== FOOTER ========== */
 
+    .footer-logo p {
+    position: absolute;
+    padding-top: 20px;
+}
+
 /* ======== FOOTER END========== */
 
 
-    /***********PC***********/
+    /***********LAPTOP***********/
 }
+    /***********PC***********/
+@media only screen and (min-width: 1300px) {
+    
+    /* ======== LOCATION ========== */
+        
+    .gmap_canvas {
+    width: 520px;
+    }
 
+    /* ======== LOCATION ========== */
+}
+    /***********PC***********/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
