@@ -103,7 +103,7 @@ textarea {
     box-sizing: border-box;
 }
 body {
-    font-size: 62.5%;
+    font-size: 50%;
     font-weight: 300;
     color: #232323;
     font-family: 'Roboto Regular', serif;
@@ -112,19 +112,19 @@ h1 {
     font-family: 'Playfair Display Black', cursive;
     font-weight: 200;
     font-size: 4em;
-    color: #363636;
+    color: #373737;
 }
 h2 {
     font-family: 'Playfair Display Black', cursive;
     font-weight: 500;
     font-size: 2em;
-    color: #363636;
+    color: #373737;
 }
 h3 {
-    font-family: 'Playfair Display Black', cursive
+    font-family: 'Roboto Regular', cursive
     font-weight: 500;
     font-size: 1.778em;
-    color: #363636;
+    color: #373737;
 }
 
 p {
@@ -138,10 +138,12 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    overflow: hidden;
 }
+
 section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .btn {
     font-weight: 500;
@@ -150,13 +152,34 @@ section {
     background: #ffbb04;
     padding: 11px 35px;
 }
+.content {
+    background-color: #fff;
+    padding: 15px 18px;
+}
+.content h3 {
+    margin-top: 0;
+}
+.content p {
+    margin: 0 0 10px;
+    text-align: left;
+}
+.content ul {
+    margin: 0 0 10px;
+    text-align: left;
+    padding-left: 17px;
+}
+.content ul.unstyle-list {
+    padding-left: 0;
+    margin-bottom: 0;
+}
 /*==============HEADER====================*/
 
 header {
-    padding: 13px 0 8px;
+    padding: 13px 0 9px;
+    margin: 0 !important;
 }
 nav {
-    display: table;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -203,13 +226,18 @@ nav .close span:nth-child(2) {
 }
 .header-logo {
     display: inline-block;
+    width: 38px;
+}
+.header-logo img {
+    max-width: 100%;
+    display: block;
 }
 .burger {
-    width: 44px;
-    height: 25px;
-    padding: 5px 0;
+    width: 41px;
+    height: 0px;
+    padding-right: 0px;
     float: right;
-    margin-top: 12px;
+    margin-top: 2px;
 }
 .burger span {
     width: 100%;
@@ -221,36 +249,346 @@ nav .close span:nth-child(2) {
 .burger span:nth-child(1) {
     margin-top: 0;
 }
-
 /*============HEADER END==============*/
 
-/*============APARTMENT==============*/
+/*======== HERO ========== */
+.hero{
+    background-image: url("../img/hero/hero1small.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.hero h1{
+    font-size: 3em;
+    color: #fff;
+    padding-top: 45px;
+}
+.hero p{
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0px 0px 14px 0px;
 
+}
+.hero p span {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+}
+.hero p span:before {
+    content: '';
+    display: block;
+    width: 27px;
+    left: 218px;
+    position: absolute;
+    top: 0.73em;
+    border-top: 1px solid white;  
+}
+.hero p span:after {
+    content: '';
+    display: block;
+    width: 27px;
+    right: 218px;
+    position: absolute;
+    top: 0.73em;
+    border-top: 1px solid white;  
+}
+.hero a.btn{
+    font-weight: 500;
+    font-size: 1.8em;
+    background: #ffbb04;
+    padding: 11px 31px;
+    margin: 0px auto;
+    display: block;
+    width: 140px;
+}
+/*======== HERO ==========*/ 
+
+/* ======== APARTMENTS ========== */
+
+.apartments{
+    background: #eaeaea;
+    padding-top: 3px; 
+}
 .apartments .head-title {
     max-width: 551px;
     margin: 0 auto;
 }
-
-.apartments .btn {
+.apartments h2 {
+    font-size: 2em;
+    font-weight: 400;
+    color: #373737;
+}
+.apartments h3 {
+    font-size: 1.7em;
+    color: #84c6df;
+    font-weight: 100;
+    padding-bottom: 5px;
     display: inline-block;
-    text-transform: uppercase;
-    font-size: 3.5em;
-    text-align: center;
-    max-width: 551px ;
+    max-width: 1100px;
+}
+.apartments h4 {
+    font-size: 1.3em;
+    color: #373737;
+    font-weight: 200;
+    padding: 0 20px;
+}  
+.apartment{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.img {
+    position:relative;
+}
+.img p{
+    position: absolute;
+    text-decoration: underline;
+    float:right;
+    bottom: 0px;
+    right: 5px;
+}
+.img p:hover {
+    color: #ca3f3f;
+    cursor: pointer;
+}
+.content ul.amenities {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.amenities li {
+    margin: 0 0 10px;
+    padding: 3px 0px 2px 11px;
+    width: 45%;
+    border-style: solid;
+    border-color: #e7e7e7;
+    border-width: 1px;
+}
+.amenities li img{
+    padding-right: 3px;
+}
+.amenities li:nth-child(odd){
+    margin-right: 11px;
+}
+.amenities li:nth-child(even){
+    margin-left: 11px;
+}
+/* ======== APARTMENTS ========== */
 
+/* ======== PRICES ========== */
+
+.prices .head-title {
+    text-align: center;
+    margin: 0 auto;
+}
+.prices{
+     padding-top: 3px; 
+}
+.prices h2 {
+    font-size: 2em;
+    font-weight: 400;
+    position: relative;
+    color: #373737;
+    padding: 0 15px;
+    overflow: hidden;
+}
+.prices ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.prices li {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    height: 80px;
+    border-right: 1px solid #e3e1e1;
+    border-bottom: 1px solid #e3e1e1;
+}
+.prices li:last-child,
+.prices li:nth-child(3){
+    padding-right: 0;
+    border-right: none;
+}
+.prices li:nth-child(4),
+.prices li:nth-child(5),
+.prices li:last-child {
+    border-bottom: none;
+}
+.prices li p {
+   font-weight: 100;
+   font-size: 1.7em;
 }
 
-/*===========APARTMENT END=============*/
+
+/* ======== PRICES ========== */
+
+/* ======== LOCATION ========== */
+.location .head-title {
+    margin: 0 auto;
+}
+.location {
+    background-image: url("../img/O9FG4R0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.location h2 {
+    font-size: 2em;
+    font-weight: 400;
+    position: relative;
+    color: #373737;
+    padding: 0px 5px 15px 5px;
+    overflow: hidden;
+    margin-top: 0;
+}
+.location h3 {
+    color: #84c6df;
+    text-align: left;
+    font-weight: 100;
+}
+.location p {
+    font-size: 1.2em;
+}
+.location small{
+    font-size: 0.9em;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:380px;
+    width:471px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:400px;
+    width:471px;   
+}
+
+/* ======== LOCATION ========== */
+
+/* ======== ABOUT ========== */
+
+.about-Karin{
+    margin-top: 0;
+    padding-top: 0;
+}
+.about-Karin h2 {
+    margin: 0;
+    padding: 20px 0px 0px;
+    font-size: 2em;
+    font-weight: 400;
+    color: #373737;
+}
+.about-Karin h3 {
+    color: #84c6df;
+    text-align: left;
+    font-weight: 100;
+    padding: 0px 20px; 
+    margin-bottom: 9px;
+}
+.about-Karin p {
+    font-size: 1.2em;
+    text-align: left;  
+    padding-bottom: 5px; 
+}
+.about-Karin .container {
+    padding: 0px 30px 5px;
+}
+/* ======== ABOUT ========== */
+
+/* ======== FOOTER ========== */
+
+.footer {
+    padding: 15px 0;
+    background-color: #3b3b3b;
+    text-align: center;
+}
+.footer-logo{
+    width: 38px;
+    display: block;
+}
+.footer-logo img{
+    max-width: 100%;
+    float: left;
+    position: relative;
+}
+.footer-logo p {
+    position: absolute;
+    padding-top: 32px;
+}
+.footer li p {
+    font-size:1em;
+    float:right;
+    padding: 10px 20px 0px 0px;
+    color: #fff;
+}
+.footer li a:hover {
+    color: #ca3f3f;
+}
+/*
+.logo-wrap {
+    float:left;
+    display: block;
+    max-width:100%;
+}
+.logo-wrap p {
+    display: block;
+    padding-top: 10px;
+}
+*/
+/* ======== FOOTER ========== */
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 1024px) {
-    /* ======== HEADER ========== */
+/***********TABLET***********/
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 60%;
+    }
+    h2:not(.container) { /*all h2 tags get their size increased*/
+        font-size: 2.5em;
+    }
+    .container h3{
+        font-size: 2.2em;
+    }
+    p{
+        font-size: 1.2em;
+    }
+    .container .left {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding-right: 10px;
+    }
+    .container .right {
+        float: right;
+        width: 50%;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    .about-Karin .container {
+        padding-bottom: 20px;
+    }
+    .content {
+        padding: 15px 30px;
+    }
+    .content li {
+        font-size: 1.2em;
+    }
+/* ======== HEADER ========== */
     header {
-        padding: 25px 0 10px;
+    padding:0;
+    }
+    .header-logo{
+        padding-top: 12px;
+        width:46px;
     }
     nav {
         display: block;
@@ -262,6 +600,7 @@ nav .close span:nth-child(2) {
     }
     nav li {
         float: left;
+        font-size: 0.8em;
     }
     nav a {
         color: #000;
@@ -283,7 +622,239 @@ nav .close span:nth-child(2) {
     nav .close {
         display: none;
     }
+/* ======== HEADER END========== */
+
+/* ======== HERO ========== */
+.hero{
+    height: 400px;
+    background-image: url("../img/hero/hero1tablet.jpg");
+}
+.hero h1{
+    padding-top: 100px;
+    font-size: 4em;
+}
+.hero p{
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+.hero p span:before {
+    width: 45px;
+    left: 345px;
+}
+.hero p span:after {
+    width: 45px;
+    right: 345px;
+}
+.hero a.btn {
+    width: 160px;
+}
+
+/* ======== HERO END========== */
+
+/* ======== APARTMENTS ========== */
+
+.apartments h2 {
+    font-size: 2.5em;
+}
+.apartments h4 {
+    font-size: 1.5em;
+}
+.img p {
+    font-size: 1.5em;
+}
+.apartment {
+    flex-direction: row;
+}
+#apartment-two {
+    flex-direction: row-reverse;
+}
+.img,
+.content {
+    flex: 1;
+}
+.img img {
+    height: 100%;
+}
+/* ======== APARTMENTS END========== */
+
+/* ======== PRICE ========== */
+
+.prices ul {
+    padding-bottom: 65px;
+}
+.prices li {
+    width: 16%;
+    height: 65px;
+    border-right: 1px solid #e3e1e1;
+}
+.prices li:last-child,
+{
+    border-right: none;
+}
+.prices li:nth-child(3){
+    border-right: 1px solid #e3e1e1;
+}
+.prices li:nth-child(4),
+.prices li:nth-child(5),
+.prices li:last-child {
+    border-bottom: 1px solid #e3e1e1;
+}
+/* ======== PRICE END========== */
+
+/* ======== LOCATION ========== */ 
+.location .container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 85%;
+}
+.location .content{
+    flex: 1;
+    padding: 0 35px;
+}
+.location .mapouter{
+    flex: 1;
+}
+.location p {
+    font-size: 1.5em;
+}
+.location small{
+    font-size: 0.9em;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.location h3 {
+    padding-top: 30px;
+}
+/* ======== LOCATION END========== */
+
+/* ======== ABOUT ========== */
+.about-Karin h3 {
+    font-size: 2.2em;
+    padding-left: 40px;
+}
+.about-Karin p {
+    font-size: 1.7em;
+}
+.left p,
+.right p{
+    padding: 20px 20px;
+} 
+/* ======== ABOUT END========== */
+
+/* ======== FOOTER ========== */
+
+/* ======== FOOTER END========== */
+
+}
+
+/***********TABLET***********/
+
+
+/***********PC***********/
+@media only screen and (min-width: 1024px) {
+    
+    section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+    body{
+        font-size: 80%;
+    }
+    /* ======== HEADER ========== */
+    header {
+        padding: 0 ;
+    }
+    nav {
+        display: block;
+        position: initial;
+        width: auto;
+        height: auto;
+        background: inherit;
+        float: right;
+    }
+    nav li {
+        float: left;
+    }
+    nav a {
+        color: #000;
+        margin-left: 40px;
+    }
+    nav a:not(.btn).active,
+    nav a:not(.btn):hover {
+        color: #6bbcda;
+    }
+    nav a,
+    nav a.btn {
+        font-size: 1.5em;
+    }
+    nav a.btn {
+        color: #000;
+        background: #ffbb04;
+    }
+    .burger,
+    nav .close {
+        display: none;
+    }
     /* ======== HEADER END ========== */
+
+/* ======== HERO ========== */
+    .hero{
+        height: 500px;
+        background-image: url("../img/hero/hero1.jpg");
+    }
+    .hero h1{
+        padding-top: 50px;
+    }
+    .hero p{
+        padding-bottom: 30px;
+    }
+    .hero p span:before {
+        width: 55px;
+        left: 460px;
+    }
+    .hero p span:after {
+        width: 55px;
+        right: 460px;
+    }
+    .hero a.btn {
+        width: 200px;
+        padding: 
+    }
+/* ======== HERO END========== */
+
+/* ======== APARTMENTS ========== */
+    
+    .apartment{
+        margin: 48px 0px 18px;
+        padding: 0px 56px;
+    }
+
+/* ======== APARTMENTS END========== */
+
+/* ======== PRICE ========== */
+
+/* ======== PRICE END========== */
+
+/* ======== LOCATION ========== */
+
+    .location .container {
+        width: 100%;
+        padding: 0px 105px;
+    }
+
+/* ======== LOCATION END========== */
+
+/* ======== ABOUT ========== */
+
+/* ======== ABOUT END========== */
+
+/* ======== FOOTER ========== */
+
+/* ======== FOOTER END========== */
+
+
+    /***********PC***********/
 }
 
 /* ==========================================================================
@@ -297,6 +868,10 @@ nav .close span:nth-child(2) {
 }
 .text-center {
     text-align: center;
+}
+
+.img img {
+    width: 100%;
 }
 
 /*
