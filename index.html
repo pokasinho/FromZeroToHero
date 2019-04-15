@@ -258,15 +258,25 @@
         <img src="img/logo.png" alt="logo">
         <h3>Reserve your stay</h3>
         <form>
-          <fieldset>
-            <legend>Booking information</legend>
+          <legend>Booking information</legend>
+          <fieldset>           
             <input type="number" name="num-of-people" placeholder="Enter number of people" class="width__2">
-            <input type="date" name="res-date" placeholder="Select date:">
-            <input type="date" name="res-date" placeholder="Select date:">
+            <label class="radio-box-div">Apartment 1
+              <input type="radio" checked="checked" name="radio" class="invisible-radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-box-div">Apartment 2
+              <input type="radio" name="radio" class="invisible-radio">
+              <span class="checkmark"></span>
+            </label>
+            <div class="date-div">
+              <input type="date" name="res-date" placeholder="Select arival date:" class="date">
+              <input type="date" name="res-date" placeholder="Select leave date:" class="date">
+            </div>
           </fieldset>
           <fieldset>
             <legend>Contact</legend>
-            <input type="text" name="firstname-surname" placeholder="Enter name" class="width__2">
+            <input type="text" name="firstname-surname" placeholder="Enter name and surname" class="width__2">
             <input type="email" name="email" placeholder="Enter email address">
             <input type="number" name="phone-num" placeholder="Enter phone number">
             <input type="submit" value="Submit booking request" class="btn">
