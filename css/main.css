@@ -103,7 +103,7 @@ textarea {
     box-sizing: border-box;
 }
 body {
-    font-size: 50%;
+    font-size: 62.5%;
     font-weight: 300;
     color: #232323;
     font-family: 'Roboto Regular', serif;
@@ -128,7 +128,7 @@ h3 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.4em;
 }
 a {
     text-decoration: none;
@@ -167,6 +167,7 @@ section {
     margin: 0 0 10px;
     text-align: left;
     padding-left: 17px;
+    font-size: 1.4em;
 }
 .content ul.unstyle-list {
     padding-left: 0;
@@ -270,15 +271,15 @@ nav .btn {
     background-image: url("../img/hero/hero3small.jpg");
 }
 .hero h1{
-    font-size: 3em;
+    font-size: 2.7em;
     color: #fff;
     padding-top: 45px;
 }
 .hero p{
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #fff;
     margin: 0px 0px 14px 0px;
-
+    padding: 0px 45px;
 }
 .hero p span {
     display: inline-block;
@@ -289,7 +290,7 @@ nav .btn {
     content: '';
     display: block;
     width: 27px;
-    left: 218px;
+    left: 200px;
     position: absolute;
     top: 0.73em;
     border-top: 1px solid white;  
@@ -298,14 +299,14 @@ nav .btn {
     content: '';
     display: block;
     width: 27px;
-    right: 218px;
+    right: 200px;
     position: absolute;
     top: 0.73em;
     border-top: 1px solid white;  
 }
 .hero a.btn{
     font-weight: 500;
-    font-size: 1.8em;
+    font-size: 1.4em;
     background: #ffbb04;
     padding: 11px 31px;
     margin: 0px auto;
@@ -338,7 +339,7 @@ nav .btn {
     max-width: 1100px;
 }
 .apartments h4 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: #373737;
     font-weight: 200;
     padding: 0 20px;
@@ -368,18 +369,20 @@ nav .btn {
     flex-wrap: wrap;
 }
 .amenities li {
+    position: relative;
     margin: 0 0 10px;
-    padding: 3px 0px 2px 11px;
-    width: 45%;
+    padding: 12px 0px 0px 28px;
+    width: 47%;
     border-style: solid;
     border-color: #e7e7e7;
     border-width: 1px;
+    min-height: 45px;
 }
 .amenities li img{
-    padding-right: 3px;
-}
-.amenities li:nth-child(odd){
-    margin-right: 11px;
+    position: absolute;
+    top: 10px;
+    left: 2px;
+
 }
 .amenities li:nth-child(even){
     margin-left: 11px;
@@ -407,12 +410,13 @@ nav .btn {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: 190px;
 }
 .prices li {
     display: inline-block;
     position: relative;
     width: 30%;
-    height: 80px;
+    height: 95px;
     border-right: 1px solid #e3e1e1;
     border-bottom: 1px solid #e3e1e1;
 }
@@ -441,25 +445,20 @@ nav .btn {
 .location {
     background-image: url("../img/O9FG4R0.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position: -214px -160px;
 }
 .location h2 {
     font-size: 2em;
     font-weight: 400;
     position: relative;
     color: #373737;
-    padding: 0px 5px 15px 5px;
     overflow: hidden;
-    margin-top: 0;
+    margin-bottom: 15px;
 }
 .location h3 {
     color: #84c6df;
     text-align: left;
     font-weight: 100;
-}
-.location p {
-    font-size: 1.2em;
 }
 .location small{
     font-size: 0.9em;
@@ -470,14 +469,15 @@ nav .btn {
 .mapouter{
     position:relative;
     text-align:right;
-    height:380px;
-    width:471px;
 }
 .gmap_canvas {
     overflow:hidden;
     background:none!important;
-    height:400px;
-    width:471px;   
+    width: 100%;  
+    height: 100%; 
+}
+.gmap_canvas iframe {
+    height: 350px;
 }
 
 /* ======== LOCATION ========== */
@@ -498,17 +498,57 @@ nav .btn {
 .about-Karin h3 {
     color: #84c6df;
     text-align: left;
-    font-weight: 100;
-    padding: 0px 20px; 
-    margin-bottom: 9px;
+    margin-bottom: -5px;
 }
 .about-Karin p {
-    font-size: 1.2em;
     text-align: left;  
     padding-bottom: 5px; 
 }
-.about-Karin .container {
-    padding: 0px 30px 5px;
+#karin-1 {
+    background-image: url("../img/about/forestsmall.jpg");
+    height: 250px;
+}
+#karin-2 {
+    background-image: url("../img/about/seasmall.jpg");
+    height: 250px;
+}
+#plitvice-1 {
+    background-image: url("../img/about/nationalparksmall.jpg");
+    height: 250px;
+}
+#plitvice-2 {
+    background-image: url("../img/about/plitvicelakessmall.jpg");
+    height: 250px;
+}
+#zrmanja-1 {
+    background-image: url("../img/about/paddlesmall.jpg");
+    height: 250px;
+}
+#zrmanja-2 {
+    background-image: url("../img/about/zrmanjasmall.jpg");
+    height: 250px;
+}
+#zadar-1 {
+    background-image: url("../img/about/zadarsmall.jpg");
+    height: 250px;
+}
+#zadar-2 {
+    background-image: url("../img/about/seaorgansmall.jpg");
+    height: 250px;
+}
+#topBtn {
+    display: inline-block;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(132,198,233,0.8);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 0px 0px 230px;
+    border-radius: 50%;
+    font-size: 15px;
+    scroll-behavior: smooth;
 }
 /* ======== ABOUT ========== */
 
@@ -530,7 +570,9 @@ nav .btn {
 }
 .footer-logo p {
     position: absolute;
-    padding-top: 32px;
+    padding-top: 30px;
+    font-size: 1em;
+    color: #fff;
 }
 .footer li p {
     font-size:1em;
@@ -569,7 +611,7 @@ nav .btn {
     display: block;
 }
 .modal-wrap {
-    max-width: 870px;
+    max-width: 300px;
     width: 90%;
     padding: 20px;
     background-color: #fff;
@@ -588,11 +630,11 @@ nav .btn {
 }
 .modal-wrap h3 {
     font-family: 'Playfair Display Black', cursive;
-    font-size: 3em;
+    font-size: 2em;
     width: 100%;
 }
 .modal-inner {
-    max-width: 520px;
+    max-width: 200px;
     margin: 0 auto;
 }
 legend {
@@ -702,7 +744,7 @@ input.btn {
         font-size: 2.2em;
     }
     p{
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
     .container .left {
         float: left;
@@ -755,7 +797,7 @@ input.btn {
     }
     nav a,
     nav a.btn {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
     nav a.btn {
         color: #000;
@@ -790,6 +832,7 @@ input.btn {
 }
 .hero a.btn {
     width: 160px;
+    font-size: 1.6em;
 }
 
 /* ======== HERO END========== */
@@ -811,24 +854,31 @@ input.btn {
 #apartment-two {
     flex-direction: row-reverse;
 }
-.img,
-.content {
+.apartment .img,
+.apartment .content {
     flex: 1;
 }
-.img img {
-    height: 100%;
+.apartment .img {
+    overflow: hidden;
 }
+.apartment .img img {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
 /* ======== APARTMENTS END========== */
 
 /* ======== PRICE ========== */
 
 .prices ul {
-    padding: 0px 20px 65px;
+    height: auto;
+    padding: 0px 20px 15px;
 }
 .prices li {
     width: 16%;
-    height: 65px;
     border-right: 1px solid #e3e1e1;
+    border-bottom: 0px;
 }
 .prices li:last-child,
 {
@@ -837,14 +887,23 @@ input.btn {
 .prices li:nth-child(3){
     border-right: 1px solid #e3e1e1;
 }
-.prices li:nth-child(4),
-.prices li:nth-child(5),
-.prices li:last-child {
+.prices h3 {
     border-bottom: 1px solid #e3e1e1;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
+/*
+.prices li h3:nth-child(4),
+.prices li h3:nth-child(5),
+.prices li h3:last-child {
+    border-bottom: 1px solid #e3e1e1;
+}*/
 /* ======== PRICE END========== */
 
 /* ======== LOCATION ========== */ 
+.location {
+    background-position: 386px -175px;
+}
 .location .container{
     display: flex;
     flex-direction: row-reverse;
@@ -852,13 +911,10 @@ input.btn {
 }
 .location .content{
     flex: 1;
-    padding: 0 35px;
+    padding: 0 35px 35px;
 }
 .location .mapouter{
     flex: 1;
-}
-.location p {
-    font-size: 1.5em;
 }
 .location small{
     font-size: 0.9em;
@@ -869,12 +925,19 @@ input.btn {
 .location h3 {
     padding-top: 30px;
 }
+.gmap_canvas iframe {
+    height: 100%;
+    width: 100%;
+}
 /* ======== LOCATION END========== */
 
 /* ======== ABOUT ========== */
+.about-Karin h2 {
+    padding-bottom: 25px;
+}
 .about-Karin h3 {
     font-size: 2.2em;
-    padding-left: 40px;
+    padding-left: 19px;
 }
 .about-Karin p {
     font-size: 1.7em;
@@ -882,7 +945,50 @@ input.btn {
 .left p,
 .right p{
     padding: 20px 20px;
-} 
+}
+.about-Karin .left img,
+.about-Karin .right img {
+    width: 100%;
+    height: 100%;
+}
+#karin-1 {
+    background-image: url("../img/about/forestsmall.jpg");
+    height: 300px;
+}
+#karin-2 {
+    background-image: url("../img/about/seasmall.jpg");
+    height: 300px;
+}
+#plitvice-1 {
+    background-image: url("../img/about/nationalparksmall.jpg");
+    height: 300px;
+}
+#plitvice-2 {
+    background-image: url("../img/about/plitvicelakessmall.jpg");
+    height: 300px;
+}
+#zrmanja-1 {
+    background-image: url("../img/about/paddlesmall.jpg");
+    height: 300px;
+    background-position: -40px -40px;
+}
+#zrmanja-2 {
+    background-image: url("../img/about/zrmanjasmall.jpg");
+    height: 300px;
+    background-position: -60px 0px;
+}
+#zadar-1 {
+    background-image: url("../img/about/zadarsmall.jpg");
+    height: 300px;
+}
+#zadar-2 {
+    background-image: url("../img/about/seaorgansmall.jpg");
+    height: 300px;
+}
+#topBtn {
+    position: absolute;
+    margin: -35px 0 0 310px;
+}
 /* ======== ABOUT END========== */
 
 /* ======== FOOTER ========== */
@@ -972,7 +1078,7 @@ input.btn {
         margin: 48px 0px 18px;
         padding: 0px 56px;
     }
-    .apartment img {
+    /*.apartment img {
         position: relative;
     }
     .apartment img::after {
@@ -983,18 +1089,17 @@ input.btn {
         top: 0;
         left: 0;
         background-color: rgba(0,0,0,.44);
-        background-image: url(../img/zoom-icon.png);
+        background-image: url(../img/logo.png);
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
         opacity: 0;
         transition: opacity .3s ease-in;
     }
-    .aparment img:hover::after {
+    .apartment img:hover::after {
         opacity: 1;
         transition: opacity .3s ease-out;   
-    }
-}
+    }*/
 
 
 /* ======== APARTMENTS END========== */
@@ -1017,35 +1122,262 @@ input.btn {
         padding: 0px 105px;
         justify-content: center;
     }
-
+    .location h2 {
+        margin-bottom: 30px;
+    }
 /* ======== LOCATION END========== */
 
 /* ======== ABOUT ========== */
 
+    #karin-1 {
+    background-image: url("../img/about/foresttablet.jpg");
+    height: 400px;
+    }
+    #karin-2 {
+        background-image: url("../img/about/seatablet.jpg");
+        height: 400px;
+    }
+    #plitvice-1 {
+        background-image: url("../img/about/nationalparktablet.jpg");
+        height: 400px;
+    }
+    #plitvice-2 {
+        background-image: url("../img/about/plitvicelakestablet.jpg");
+        height: 400px;
+    }
+    #zrmanja-1 {
+        background-image: url("../img/about/paddletablet.jpg");
+        height: 400px;
+        background-position: -90px -130px;
+    }
+    #zrmanja-2 {
+        background-image: url("../img/about/zrmanjatablet.jpg");
+        height: 400px;
+        background-position: -60px 0px;
+    }
+    #zadar-1 {
+        background-image: url("../img/about/zadartablet.jpg");
+        height: 400px;
+        background-position: 0px -100px;
+    }
+    #zadar-2 {
+        background-image: url("../img/about/seaorgantablet.jpg");
+        height: 400px;
+    }
+    #topBtn {
+    position: absolute;
+    margin: -110px 0 0 530px;
+    padding: 20px;
+    }
+    #topBtn:hover {
+    background-color: rgba(112,148,255,1); /* Add a dark-grey background on hover */
+    }
 /* ======== ABOUT END========== */
-
+    
 /* ======== FOOTER ========== */
 
     .footer-logo p {
     position: absolute;
-    padding-top: 20px;
-}
+    padding-top: 25px;
+    }
 
 /* ======== FOOTER END========== */
 
-
-    /***********LAPTOP***********/
 }
+    /***********LAPTOP***********/
+
     /***********PC***********/
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
     
-    /* ======== LOCATION ========== */
-        
-    .gmap_canvas {
-    width: 520px;
+    section {
+        padding-top: 1px;
+    }
+    /* ======== HERO ========== */
+
+    .hero h1 {
+        padding-top: 75px;
+    }
+    .hero p span{
+        padding: 10px 0px
     }
 
+    .hero p span::before,
+    .hero p span::after {
+        top: 26px;
+    }
+    /* ======== APARTMENT ========== */
+
+    .apartments .amenities li {
+        padding: 7px 0px 0px 28px;
+    }
+    /* ======== APARTMENT END ========== */
+
+    /* ======== PRICES ========== */
+
+    .prices ul {
+        padding-bottom: 10px;
+    }
+    .prices li {
+        height: auto;
+    }
+
+    /* ======== PRICES END ========== */
+
     /* ======== LOCATION ========== */
+
+    .location {
+        background-position: -20px -31 2px;
+    }
+    .location .content {
+        padding-bottom: 45px;
+    }
+    /* ======== LOCATION END ========== */
+
+    /* ======== ABOUT ========== */
+    .about-Karin .container {
+        padding-top: 55px;
+    }
+    .about-Karin h2 {
+        padding: 55px 0px 0px;
+    }
+    #topBtn {
+    position: absolute;
+    margin: -110px 0 0 530px;
+    padding: 20px;
+    }
+    /* ======== ABOUT END ========== */
+
+    /* ======== MODAL ========== */
+
+    .modal {
+    display: none;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    }
+    .modal.open {
+        display: block;
+    }
+    .modal-wrap {
+        max-width: 870px;
+        width: 90%;
+        padding: 20px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 90%;
+        overflow-y: auto;
+    }
+    .modal-wrap > * {
+        display: inline-block;
+    }
+    .modal-wrap .close span {
+        background-color: #d6d6d6;
+    }
+    .modal-wrap h3 {
+        font-family: 'Playfair Display Black', cursive;
+        font-size: 3em;
+        width: 100%;
+    }
+    .modal-inner {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+    legend {
+        text-align: left;
+        font-size: 1.8em;
+        padding-bottom: 30px;
+        font-family: 'Roboto Regular', cursive; 
+    }
+    input {
+        border: 1px solid #d6d6d6;
+        width: 100%;
+        padding: 20px 15px;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+    }
+    .radio-box-div{
+        display: block;
+        position: relative;
+        padding: 0px 325px 0px 0px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 1.6em;  
+    }
+    .invisible-radio{           /* Hide the built in radio button */
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    .checkmark {                /* Create a custom radio button */
+       position: absolute;
+       top: 2px;
+       left: 0;
+       height: 25px;
+       width: 25px;
+       background-color: #eee;
+       border-radius: 50%;
+    }
+    .radio-box-div:hover input ~ .checkmark {       /* On mouse-over, add a grey background color */
+      background-color: #ccc;
+    }
+    .radio-box-div input:checked ~ .checkmark {     /* When the radio button is checked, add a blue background */
+      background-color: #84c6df;
+    }
+    .checkmark:after {       /* Create the indicator (the dot/circle - hidden when not checked) */
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    .radio-box-div input:checked ~ .checkmark:after {   /* Show the indicator (dot/circle) when checked */
+      display: block;
+    }
+    .radio-box-div .checkmark:after {   /* Style the indicator (dot/circle) */
+        top: 8px;
+        left: 8px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: white;
+    }
+    input::placeholder {
+      color: #d6d6d6;
+      font-size: 16px;
+      font-style: italic;
+    }
+    input:focus {
+        outline: none;
+        border-color: #84c6df;
+    }
+    .date-div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .date {
+        width: 48%;
+        font-size: 1em;
+    }
+    input.btn {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+        padding: 13px 15px;
+    }
+     input[type="date"]:before,
+     input[type="time"]:before {
+        content: attr(placeholder) !important;
+        color: #d6d6d6;
+        font-style: italic;
+        margin-right: 0.5em;
+      }
 }
     /***********PC***********/
 /* ==========================================================================

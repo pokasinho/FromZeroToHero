@@ -14,6 +14,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,700" rel="stylesheet">
 
+  <link href="path/to/lightbox.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -54,10 +55,10 @@
           <li></li> -->
         </ul>
     </section>
-    <section class="apartments text-center">
+    <section class="apartments text-center" id="apartments">
       <div class="container">
           <h2>Apartments</h2>
-          <h4>Our rooms are all pet friendly, with a sea view for the most outstanding vacation!</h4>
+          <p>Our rooms are all pet friendly, with a sea view for the most outstanding vacation!</p>
         <div class="apartment">
           <div class="img">
               <img src="img/apartments/apartment1small.jpg">
@@ -109,7 +110,7 @@
         </div>
       </div>
     </section>
-    <section class="prices text-center">
+    <section class="prices text-center" id="prices">
         <div class="head-title">
           <h2>Prices</h2>
         </div>
@@ -142,7 +143,7 @@
           </ul>
         </div>
     </section>
-    <section class="location text-center">
+    <section class="location text-center" id="location">
       <div class="head-title">
         <h2><span>Location</span></h2>
       </div>
@@ -158,83 +159,76 @@
         </div>
         <div class="mapouter">
           <div class="gmap_canvas">
-            <iframe width="471" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=donji%20karin&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <iframe width="" height="" id="gmap_canvas" src="https://maps.google.com/maps?q=donji%20karin&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             <a href="https://www.emojilib.com">emojilib.com</a>
           </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="about-Karin text-center">   
-        <h2>About Karin and nearby places</h2>   
-        <h3>Donji Karin</h3>    
-        <div class="container">
-          <div class="left">           
+    <section class="about-Karin text-center" id="about-Karin">   
+        <h2>About Karin and nearby places</h2>     
+        <div class="container">  
+          <div class="left">
+            <h3>Donji Karin</h3>           
             <p>Donji Karin is a small place located around the Karin sea belonging to district of a nearby town Benkovac.</p>
           </div>
-          <div class="right img">
-             <img src="img/about/forestsmall.jpg">  
+          <div class="right img" id="karin-1"> 
           </div>
         </div>
         <div class="container">
           <div class="right">
             <p>Surounded by a beautiful pine forest Donji Karin is a perfect place for a relaxing family vacation.Donji Karin and Gornji Karin together have a population of 121 people.River Karišnjica separates the two places.</p>
           </div>
-          <div class="left img">
-              <img src="img/about/seasmall.jpg">
+          <div class="left img" id="karin-2">
           </div>
-        </div>
-        <h3>Plitvice Lakes</h3>     
-        <div class="container">
+        </div>   
+        <div class="container">  
           <div class="left">
+            <h3>Plitvice Lakes</h3>
             <p>Plitvice Lakes National Park is one of the oldest and largest national parks in Croatia.The national park was founded in 1949 and is situated in the mountainous karst area of central Croatia.The protected area extends over 296.85 square kilometres</p>
           </div>
-          <div class="right img">
-            <img src="img/about/nationalparksmall.jpg">
+          <div class="right img" id="plitvice-1">
           </div>
         </div>
         <div class="container">
           <div class="right">
             <p>Each year, more than 1 million visitors are recorded.Entrance is subject to variable charges, up to 250 kuna or around €34 per adult per day in the summer. From Karin it takes about an hour drive to get there.</p>
           </div>
-          <div class="left img">
-            <img src="img/about/plitvicelakessmall.jpg">
+          <div class="left img" id="plitvice-2">
           </div>
         </div>
-        <h3>Zrmanja river</h3>
         <div class="container">
           <div class="left">
+            <h3>Zrmanja river</h3>
             <p>Zrmanja is a river in southern Lika and northern Dalmatia, Croatia. It is 69 km long and its basin covers an area of 907 km2. Located close to south end of Velebit mountain it flows into the Adriatic Sea in the bay named Novigradsko more.</p>
           </div>
-          <div class="right img">
-            <img src="img/about/paddlesmall.jpg">
+          <div class="right img" id="zrmanja-1">
           </div>
         </div>
         <div class="container">
           <div class="right">
             <p>For those who are into extreme sports, rafting trips on Zrmanja take place in spring and autumn, while kayaks and canoes are used during low water level period of July and August</p>
           </div>
-          <div class="left img">
-            <img src="img/about/zrmanjasmall.jpg">
-          </div>          
-        </div>
-        <h3>Zadar</h3>        
-        <div class="container">
+          <div class="left img" id="zrmanja-2">
+          </div>            
+        </div>        
+        <div class="container" id="zadar">
           <div class="left">
+            <h3>Zadar</h3>
             <p>Zadar s the oldest continuously inhabited Croatian city. It is situated on the Adriatic Sea, at the northwestern part of Ravni Kotari region. Zadar serves as the seat of Zadar County and the wider northern Dalmatian region.</p>
           </div>
-          <div class="right img">
-            <img src="img/about/zadarsmall.jpg">
+          <div class="right img" id="zadar-1">
           </div>
         </div>
         <div class="container">
           <div class="right">
             <p>With a half an hour drive visit Zadar and see this mediaeval City with astounding architecture and unique turist atractions such as the Zadar Sea Organ which produces music as the waves come and Monument to the Sun that lights up at night. </p>
           </div>
-          <div class="left img">
-            <img src="img/about/seaorgansmall.jpg">
-          </div>
+          <div class="left img" id="zadar-2">
+          </div>      
         </div>
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
     </section>
   </main>
 
@@ -295,6 +289,8 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="path/to/lightbox.js"></script>
+
 </body>
 
 </html>

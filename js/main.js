@@ -8,6 +8,12 @@ $('.modal .close').on('click', function(event) {
 	/* Act on the event */
 	$('.modal').removeClass('open');
 });
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 var safari   = navigator.userAgent.indexOf("Safari") > -1;
 var chrome   = navigator.userAgent.indexOf('Chrome') > -1;
 if ((chrome) && (safari)) {
