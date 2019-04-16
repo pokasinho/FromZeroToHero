@@ -1,3 +1,13 @@
+$('.burger').on('click', function(event) {
+  event.preventDefault();
+  /* Act on the event */
+  $('nav').addClass('nav-active');
+});
+$('.nav .close').on('click', function(event) {
+  event.preventDefault();
+  /* Act on the event */
+  $('.nav').removeClass('nav-active');
+});
 $('.booking').on('click', function(event) {
 	event.preventDefault();
 	/* Act on the event */

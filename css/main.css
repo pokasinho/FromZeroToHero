@@ -180,6 +180,7 @@ header {
     margin: 0 !important;
 }
 nav {
+    z-index: 3;
     display: none;
     position: fixed;
     top: 0;
@@ -189,6 +190,9 @@ nav {
     background: #6bbcda;
     text-align: center;
     color: #000;
+}
+.nav-active{
+    display: table;
 }
 nav ul {
     display: table-cell;
@@ -253,11 +257,11 @@ nav .btn {
 /*============HEADER END==============*/
 
 /*======== HERO ========== */
-.hero{
+.hero {
     background-image: url("../img/hero/hero1small.jpg");
     background-size: cover;
     background-position: center;
-    height: 250px;
+    height: 300px;
 }
 /*.hero li:nth-child(2),
 .hero li:nth-child(3) {
@@ -313,6 +317,7 @@ nav .btn {
     display: block;
     width: 140px;
 }
+
 /*======== HERO ==========*/ 
 
 /* ======== APARTMENTS ========== */
@@ -355,6 +360,7 @@ nav .btn {
 .img p{
     position: absolute;
     text-decoration: underline;
+    color: black;
     float:right;
     bottom: 0px;
     right: 5px;
